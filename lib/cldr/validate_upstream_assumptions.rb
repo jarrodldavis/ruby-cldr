@@ -341,7 +341,7 @@ module Cldr
 
       # Alias element chain that exist in the CLDR data, but we don't support, since we don't export this data.
       # Note: We don't have anything that will catch us if/when we start exporting this data.
-      UNUSED_ALIAS_ELEMENT_CHAINS = File.readlines("lib/cldr/unused_alias_element_chains.txt").map(&:strip).reject { |line| line.start_with?("#") || line.empty? }.freeze
+      UNUSED_ALIAS_ELEMENT_CHAINS = File.readlines(File.expand_path("unused_alias_element_chains.txt", File.dirname(__FILE__))).map(&:strip).reject { |line| line.start_with?("#") || line.empty? }.freeze
 
       def validate_aliases_only_in_expected_paths
         errors = []

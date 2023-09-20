@@ -119,6 +119,7 @@ DEPENDENCIES
   i18n
   jeweler
   nokogiri
+  parser (~> 3.2)
   pry
   pry-nav
   psych (>= 4.0.0)

@@ -4,6 +4,7 @@ source "http://rubygems.org"
 
 gem "i18n"
 gem "nokogiri"
+gem "parser", "~> 3.2"
 gem "psych", ">= 4.0.0"
 gem "rubyzip"
 gem "thor"
